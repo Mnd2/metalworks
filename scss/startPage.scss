@@ -194,7 +194,6 @@ nav {
 
 .logo {
   display: flex;
-  justify-content: center;
   vertical-align: middle;
   color: #fffefe;
   font-size: 2rem;
@@ -202,6 +201,7 @@ nav {
 
   box-sizing: border-box;
   width: 50%;
+  margin-left: 50px;
 }
 
 .main-menu,
@@ -235,7 +235,7 @@ nav {
   padding: 20px;
   height: 100%;
   .aboutContainer {
-    width: 49%;
+    width: 95%;
     h1 {
       color: #fffefe;
     }
@@ -246,8 +246,7 @@ nav {
   .contactsContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 49%;
+    align-items: center;
     a{
       margin: 10px;
     }
