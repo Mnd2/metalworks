@@ -1,3 +1,10 @@
+#page_start {
+.generalContainer {
+  background-image: url(/app/pic/welding.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+
 $responsive-menu-breakpoint: 1220px !default;
 
 @mixin hide-menu {
@@ -194,7 +201,7 @@ nav {
 
 .main-menu,
 .sub-menu {
-  background: #33333394;
+  background: none;
   margin-right: 150px;
 
   li {
@@ -215,4 +222,27 @@ nav {
   @media only screen and (max-width: $responsive-menu-breakpoint) {
     background: #777777;
   }
+}
+.about_cotacts {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  .aboutContainer {
+    width: 49%;
+    h1 {
+      color: #fffefe;
+    }
+    p {
+      color: #fffefe;
+    }
+  }
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 49%;
+  }
+}
+}
 }
