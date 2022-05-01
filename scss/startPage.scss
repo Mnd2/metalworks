@@ -233,10 +233,13 @@ nav {
 .about_cotacts {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
   height: 100%;
   .aboutContainer {
+    display: flex;
+    flex-direction: column;
     width: 95%;
+    bottom: 165px;
     h1 {
       color: #fffefe;
     }
