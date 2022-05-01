@@ -32,6 +32,7 @@ $responsive-menu-breakpoint: 1220px !default;
   margin-top: 15px;
   width: fit-content;
   z-index: 99999;
+  padding: 20px;
 }
 
 .responsive-menu {
@@ -204,7 +205,7 @@ nav {
 .main-menu,
 .sub-menu {
   background: #33333394;
-  margin-right: 150px;
+  margin-right: 0px;
 
   li {
     a {
