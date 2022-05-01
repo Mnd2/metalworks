@@ -138,6 +138,8 @@ body {
 header {
   background: #333333;
   font-size: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav {
@@ -174,7 +176,8 @@ nav {
 }
 
 .logo {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   vertical-align: middle;
   color: #ffffff;
   font-size: 2rem;
@@ -182,11 +185,13 @@ nav {
 
   box-sizing: border-box;
   width: 15%;
+
 }
 
 .main-menu,
 .sub-menu {
   background: #333333;
+  margin-right: 150px;
 
   li {
     a {
