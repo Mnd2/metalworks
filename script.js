@@ -1,180 +1,102 @@
-// projects
-const $window = $(window);
-const $body = $("body");
+// Sub-menu
+var submenus = document.querySelectorAll("ul.sub-menu");
+if (submenus.length > 0)
+  for (var i = 0; i < submenus.length; i++) {
+    var span = document.createElement("span");
+    span.classList.add("expand");
+    span.innerHTML = "+";
 
-class Slideshow {
-  constructor(userOptions = {}) {
-    const defaultOptions = {
-      $el: $(".slideshow"),
-      showArrows: false,
-      showPagination: true,
-      duration: 10000,
-      autoplay: true,
-    };
-
-    let options = Object.assign({}, defaultOptions, userOptions);
-
-    this.$el = options.$el;
-    this.maxSlide = this.$el.find($(".js-slider-home-slide")).length;
-    this.showArrows = this.maxSlide > 1 ? options.showArrows : false;
-    this.showPagination = options.showPagination;
-    this.currentSlide = 1;
-    this.isAnimating = false;
-    this.animationDuration = 1200;
-    this.autoplaySpeed = options.duration;
-    this.interval;
-    this.$controls = this.$el.find(".js-slider-home-button");
-    this.autoplay = this.maxSlide > 1 ? options.autoplay : false;
-
-    this.$el.on("click", ".js-slider-home-next", (event) => this.nextSlide());
-    this.$el.on("click", ".js-slider-home-prev", (event) => this.prevSlide());
-    this.$el.on("click", ".js-pagination-item", (event) => {
-      if (!this.isAnimating) {
-        this.preventClick();
-        this.goToSlide(event.target.dataset.slide);
-      }
+    span.addEventListener("click", function () {
+      this.classList.toggle("active");
+      // this.nextElementSibling.classList.toggle('active');
+      this.parentNode.classList.toggle("active");
     });
 
-    this.init();
+    submenus[i].previousElementSibling.appendChild(span);
+    submenus[i].parentNode.insertBefore(span, submenus[i]);
   }
 
-  init() {
-    this.goToSlide(1);
-    if (this.autoplay) {
-      this.startAutoplay();
-    }
+/*
+	<a class="anyclass" href="#" data-toggle-class="active, someotherclass" data-toggle-target=".menu, self">Menu</a>
 
-    if (this.showPagination) {
-      let paginationNumber = this.maxSlide;
-      let pagination = '<div class="pagination"><div class="container">';
+	data-toggle-class - classes to apply to targets
+	data-toggle-target - target's selectors to apply classes to
 
-      for (let i = 0; i < this.maxSlide; i++) {
-        let item = `<span class="pagination__item js-pagination-item ${
-          i === 0 ? "is-current" : ""
-        }" data-slide=${i + 1}>${i + 1}</span>`;
-        pagination = pagination + item;
-      }
-
-      pagination = pagination + "</div></div>";
-
-      this.$el.append(pagination);
-    }
-  }
-
-  preventClick() {
-    this.isAnimating = true;
-    this.$controls.prop("disabled", true);
-    clearInterval(this.interval);
-
-    setTimeout(() => {
-      this.isAnimating = false;
-      this.$controls.prop("disabled", false);
-      if (this.autoplay) {
-        this.startAutoplay();
-      }
-    }, this.animationDuration);
-  }
-
-  goToSlide(index) {
-    this.currentSlide = parseInt(index);
-
-    if (this.currentSlide > this.maxSlide) {
-      this.currentSlide = 1;
-    }
-
-    if (this.currentSlide === 0) {
-      this.currentSlide = this.maxSlide;
-    }
-
-    const newCurrent = this.$el.find(
-      '.js-slider-home-slide[data-slide="' + this.currentSlide + '"]'
-    );
-    const newPrev =
-      this.currentSlide === 1
-        ? this.$el.find(".js-slider-home-slide").last()
-        : newCurrent.prev(".js-slider-home-slide");
-    const newNext =
-      this.currentSlide === this.maxSlide
-        ? this.$el.find(".js-slider-home-slide").first()
-        : newCurrent.next(".js-slider-home-slide");
-
-    this.$el
-      .find(".js-slider-home-slide")
-      .removeClass("is-prev is-next is-current");
-    this.$el.find(".js-pagination-item").removeClass("is-current");
-
-    if (this.maxSlide > 1) {
-      newPrev.addClass("is-prev");
-      newNext.addClass("is-next");
-    }
-
-    newCurrent.addClass("is-current");
-    this.$el
-      .find('.js-pagination-item[data-slide="' + this.currentSlide + '"]')
-      .addClass("is-current");
-  }
-
-  nextSlide() {
-    this.preventClick();
-    this.goToSlide(this.currentSlide + 1);
-  }
-
-  prevSlide() {
-    this.preventClick();
-    this.goToSlide(this.currentSlide - 1);
-  }
-
-  startAutoplay() {
-    this.interval = setInterval(() => {
-      if (!this.isAnimating) {
-        this.nextSlide();
-      }
-    }, this.autoplaySpeed);
-  }
-
-  destroy() {
-    this.$el.off();
-  }
-}
-
+	If there is no 'data-toggle-target' attribute (only 'data-toggle-class'), classes are applyed to trigger element. 
+	If classes are needed to be appled to targets including trigger element itself, use keywords 'this' or 'self'.
+*/
 (function () {
-  let loaded = false;
-  let maxLoad = 3000;
-
-  function load() {
-    const options = {
-      showPagination: true,
-    };
-
-    let slideShow = new Slideshow(options);
+  function toggleClasses(classes, obj) {
+    if (!classes) return;
+    if (!obj) return;
+    for (var n = 0; n < classes.length; n++)
+      obj.classList.toggle(classes[n].trim());
   }
 
-  function addLoadClass() {
-    $body.addClass("is-loaded");
+  function applyToTargets(targetslist, dototargets, obj, dotoself, dotonext) {
+    if (!targetslist) return;
+    if (!dototargets) return;
 
-    setTimeout(function () {
-      $body.addClass("is-animated");
-    }, 600);
+    targetslist = targetslist.split(",");
+
+    for (var n = 0; n < targetslist.length; n++) {
+      targetslist[n] = targetslist[n].trim();
+
+      if (
+        (targetslist[n] == "this" || targetslist[n] == "self") &&
+        obj &&
+        dotoself
+      )
+        dotoself(obj);
+      if (targetslist[n] == "next" && obj && dotonext)
+        dotonext(obj.nextElementSibling);
+      else {
+        var elems = document.querySelectorAll(targetslist[n]);
+        if (elems.length > 0) {
+          for (var m = 0; m < elems.length; m++) {
+            dototargets(elems[m]);
+          }
+        }
+      }
+    }
   }
 
-  $window.on("load", function () {
-    if (!loaded) {
-      loaded = true;
-      load();
-    }
-  });
+  var clickToggle = document.querySelectorAll("[data-toggle-class]");
 
-  setTimeout(function () {
-    if (!loaded) {
-      loaded = true;
-      load();
-    }
-  }, maxLoad);
+  if (clickToggle.length > 0) {
+    for (var i = 0; i < clickToggle.length; i++) {
+      clickToggle[i].addEventListener("click", function (e) {
+        e.preventDefault();
 
-  addLoadClass();
+        var classes = this.getAttribute("data-toggle-class");
+        if (!classes) return;
+
+        classes = classes.split(",");
+        for (var n = 0; n < classes.length; n++) classes[n] = classes[n].trim();
+
+        var targets = this.getAttribute("data-toggle-target");
+
+        if (!targets)
+          toggleClasses(
+            classes,
+            this
+          ); //for(var n=0; n<classes.length; n++)  this.classList.toggle(classes[n]);
+        else {
+          applyToTargets(
+            targets,
+            function (elem) {
+              toggleClasses(classes, elem);
+            },
+            this,
+            function (elem) {
+              toggleClasses(classes, elem);
+            },
+            function (elem) {
+              toggleClasses(classes, elem);
+            }
+          );
+        }
+      });
+    }
+  }
 })();
-
-
-
-// NAMAMS
-
