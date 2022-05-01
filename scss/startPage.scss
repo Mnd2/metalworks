@@ -194,6 +194,7 @@ nav {
 
 .logo {
   display: flex;
+  justify-content: center;
   vertical-align: middle;
   color: #fffefe;
   font-size: 2rem;
@@ -208,6 +209,7 @@ nav {
 .sub-menu {
   display: flex;
   justify-content: center;
+  top: 0;
 
   li {
     a {
