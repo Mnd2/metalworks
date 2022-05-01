@@ -3,8 +3,9 @@
   background-image: url(../pic/pag.jpg);
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 $responsive-menu-breakpoint: 1220px !default;
 
@@ -148,7 +149,6 @@ body {
 }
 
 header {
-  background: #33333394;
   font-size: 0;
   display: flex;
   align-items: center;
@@ -158,7 +158,8 @@ header {
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   vertical-align: middle;
   position: relative;
   background: none;
@@ -204,8 +205,8 @@ nav {
 
 .main-menu,
 .sub-menu {
-  background: #33333394;
-  margin-right: 0px;
+  display: flex;
+  justify-content: center;
 
   li {
     a {
