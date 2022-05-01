@@ -16,6 +16,9 @@ $responsive-menu-breakpoint: 1220px !default;
 }
 
 @mixin show-menu {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
   opacity: 1;
   pointer-events: auto;
   margin-top: 0;
@@ -184,8 +187,7 @@ nav {
   padding: 0.8rem 1rem;
 
   box-sizing: border-box;
-  width: 15%;
-
+  width: 50%;
 }
 
 .main-menu,
