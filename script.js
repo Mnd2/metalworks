@@ -100,3 +100,59 @@ if (submenus.length > 0)
     }
   }
 })();
+
+
+
+// VERTIMAS
+const langEl = document.querySelector(".langWrap");
+const link = document.querySelectorAll("a");
+const generalEl = document.querySelector(".general");
+const projectEl = document.querySelector(".project");
+const businessEl = document.querySelector(".business");
+const homeEl = document.querySelector(".home");
+const aboutEl = document.querySelector(".about");
+const contactsEl = document.querySelector(".contacts");
+const titleEl = document.querySelector(".title");
+const descriptionEl = document.querySelector(".description");
+
+link.forEach(el => {
+  el.addEventListener('click', () => {
+    langEl.querySelector('.active').classList.remove('active');
+    el.classList.add('active');
+
+    const attr = el.getAttribute('language');
+
+    generalEl.textContent = data[attr].general;
+    projectEl.textContent = data[attr].project;
+    businessEl.textContent = data[attr].business;
+    homeEl.textContent = data[attr].home;
+    aboutEl.textContent = data[attr].about;
+    contactsEl.textContent = data[attr].contacts;
+    titleEl.textContent = data[attr].title;
+    descriptionEl.textContent = data[attr].description;
+  });
+});
+
+
+var data = {
+  "lithuanian": {
+    "general": "Pagrindinis",
+    "project": "Projektai",
+    "business": "Verslui",
+    "home": "Namams",
+    "about": "Apie mus",
+    "contacts": "Kontaktai",
+    "title": "Metalinių baldų projektavimas ir gamyba",
+    "description": "Mes paverčiam metalą į dizainą",
+  },
+  "english": {
+    "general": "Home",
+    "project": "Projects",
+    "business": "For Buisness",
+    "home": "For Home",
+    "about": "About Us",
+    "contacts": "Contacts",
+    "title": "Design and manufacture of metal furniture",
+    "description": "We turn metal into design",
+  },
+};
