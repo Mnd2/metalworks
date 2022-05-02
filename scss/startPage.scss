@@ -166,7 +166,7 @@
       font-size: 1rem;
 
       box-sizing: border-box;
-      width: 85%;
+      width: 55%;
 
       @media only screen and (min-width: $responsive-menu-breakpoint) {
         text-align: right;
@@ -229,35 +229,51 @@
         background: #777777;
       }
     }
-    .about_cotacts {
+    .langWrap {
       display: flex;
-      align-items: center;
-      padding: 50px;
-      height: 100%;
-      .aboutContainer {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-        height: 65%;
-        padding: 0px 249px;
-        bottom: 0;
-        justify-content: flex-end;
-        h1 {
-          color: #fffefe;
-        }
-        p {
-          color: #fffefe;
-        }
+      justify-content: space-around;
+      width: 5%;
+      margin-right: 20px;
+
+      a {
+        opacity: 1;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #ffffff;
       }
-      .contactsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        a {
-          margin: 10px;
-          i {
-            color: #ffffff;
-          }
+      a.active {
+        color: red;
+      }
+    }
+  }
+  .about_cotacts {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 100%;
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      height: 65%;
+      padding: 0px 249px;
+      bottom: 0;
+      justify-content: flex-end;
+      h1 {
+        color: #fffefe;
+      }
+      p {
+        color: #fffefe;
+      }
+    }
+    .contactsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        margin: 10px;
+        i {
+          color: #ffffff;
         }
       }
     }
