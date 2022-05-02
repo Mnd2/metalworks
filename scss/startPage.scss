@@ -28,7 +28,7 @@
       flex-direction: column;
       opacity: 1;
       pointer-events: auto;
-      margin-top: 15px;
+      margin-top: 35px;
       width: fit-content;
       z-index: 99999;
       padding: 20px;
@@ -48,7 +48,16 @@
       font-size: 0;
 
       li {
+        display: flex;
         font-size: 1rem;
+        width: 150%;
+        left: 0;
+        right: 0px;
+        align-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: nowrap;
       }
     }
 
@@ -208,6 +217,9 @@
       display: flex;
       justify-content: center;
       top: 0;
+      align-items: center;
+      width: 55%;
+      justify-content: center;
 
       li {
         a {
@@ -242,7 +254,8 @@
         color: #ffffff;
       }
       a.active {
-        color: red;
+        color: #d9b08c;
+        text-shadow: 0px 0px 1px #f8edd5, 1px 0px 0px #f8edd5, 1px 1px 0px #f8edd5, 1px 1px 0px #f8edd5;
       }
     }
   }
@@ -261,9 +274,12 @@
       justify-content: flex-end;
       h1 {
         color: #fffefe;
+        font-weight: bold;
       }
       p {
         color: #fffefe;
+        font-weight: bold;
+        font-size: 20px;
       }
     }
     .contactsContainer {
