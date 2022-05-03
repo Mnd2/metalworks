@@ -105,7 +105,7 @@ if (submenus.length > 0)
 
 // VERTIMAS
 const langEl = document.querySelector(".langWrap");
-const link = document.querySelectorAll("a");
+const link = document.querySelectorAll(".lng");
 const generalEl = document.querySelector(".general");
 const projectEl = document.querySelector(".project");
 const businessEl = document.querySelector(".business");
@@ -114,6 +114,8 @@ const aboutEl = document.querySelector(".about");
 const contactsEl = document.querySelector(".contacts");
 const titleEl = document.querySelector(".title");
 const descriptionEl = document.querySelector(".description");
+const about1El = document.querySelector(".about1");
+const aboutUsTextEl = document.querySelector(".aboutUsText");
 
 link.forEach(el => {
   el.addEventListener('click', () => {
@@ -130,6 +132,8 @@ link.forEach(el => {
     contactsEl.textContent = data[attr].contacts;
     titleEl.textContent = data[attr].title;
     descriptionEl.textContent = data[attr].description;
+    about1El.textContent = data[attr].about1;
+    aboutUsTextEl.textContent = data[attr].aboutUsText;
   });
 });
 
@@ -144,6 +148,9 @@ var data = {
     "contacts": "Kontaktai",
     "title": "Metalinių baldų projektavimas ir gamyba",
     "description": "Mes paverčiam metalą į dizainą",
+    "about1": "Apie mus",
+    "aboutUsText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos atque reiciendis, rerum labore odit maxime iusto, molestias laborum repellat omnis ex, eveniet amet fugit deserunt excepturi molestiae minus error ab!",
+    
   },
   "english": {
     "general": "Home",
@@ -154,5 +161,16 @@ var data = {
     "contacts": "Contacts",
     "title": "Design and manufacture of metal furniture",
     "description": "We turn metal into design",
+    "about1": "About Us",
+    "aboutUsText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
   },
 };
+
+const menuSelect = document.querySelector(".main-menu");
+const btn = document.querySelectorAll("span");
+btn.forEach(sel => {
+  sel.addEventListener('click', () => {
+    menuSelect.querySelector(".press").classList.remove("press");
+    sel.classList.add('press');
+  });
+});

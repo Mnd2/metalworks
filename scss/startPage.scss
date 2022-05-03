@@ -1,4 +1,10 @@
 #page_start {
+  background-image: url(../pic/mainbg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   .generalContainer {
     background-image: url(../pic/bg.jpg);
     height: 100vh;
@@ -58,6 +64,9 @@
         justify-content: space-around;
         flex-direction: column;
         flex-wrap: nowrap;
+        .press {
+          color: #d9b08c;
+        }
       }
     }
 
@@ -255,7 +264,8 @@
       }
       a.active {
         color: #d9b08c;
-        text-shadow: 0px 0px 1px #f8edd5, 1px 0px 0px #f8edd5, 1px 1px 0px #f8edd5, 1px 1px 0px #f8edd5;
+        text-shadow: 0px 0px 1px #f8edd5, 1px 0px 0px #f8edd5,
+          1px 1px 0px #f8edd5, 1px 1px 0px #f8edd5;
       }
     }
   }
@@ -294,4 +304,36 @@
       }
     }
   }
+  #aboutUs {
+    .aboutContainer {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+      .aboutLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 49%;
+        padding: 20px;
+        .about1 {
+          color: #ffffff;
+        }
+        .aboutUsText {
+          color: #ffffff;
+        }
+      }
+      .aboutRight {
+        display: flex;
+
+        width: 50%;
+        img {
+          width: 100%;
+          border-radius: 20%;
+        }
+      }
+    }
+    
+  }
 }
+
