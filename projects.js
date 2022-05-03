@@ -1,5 +1,3 @@
-console.clear();
-
 const elApp = document.querySelector("#app");
 
 const elImages = Array.from(document.querySelectorAll(".gallery-image"));
