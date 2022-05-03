@@ -299,7 +299,6 @@
     }
   }
   #aboutUs {
-    
     .aboutContainer {
       display: flex;
       height: 100vh;
@@ -322,14 +321,14 @@
         display: flex;
         width: 50%;
         img {
-                  top: -60px;
-        position: absolute;
-          width: 100%;
+          right: 100px;
+          top: -60px;
+          position: absolute;
+          width: 60%;
           margin: 20px;
         }
       }
     }
-    
   }
   #project {
     display: flex;
@@ -348,4 +347,3 @@
     }
   }
 }
-
