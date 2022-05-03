@@ -331,17 +331,17 @@
   }
   #project {
     display: flex;
-    
+    justify-content: space-around;
     .projectLeft {
       background-image: url(../pic/verslui.jpeg);
       background-size: cover;
-      width: 48%;
+      width: 50%;
       height: 100vh;
     }
     .projectright {
       background-image: url(../pic/namams.jpg);
       background-size: cover;
-      width: 48%;
+      width: 45%;
       height: 100vh;
     }
   }
