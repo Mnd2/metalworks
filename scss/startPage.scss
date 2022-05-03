@@ -320,7 +320,6 @@
       }
       .aboutRight {
         display: flex;
-
         width: 50%;
         img {
           width: 100%;
@@ -329,6 +328,22 @@
       }
     }
     
+  }
+  #project {
+    display: flex;
+    
+    .projectLeft {
+      background-image: url(../pic/verslui.jpeg);
+      background-size: cover;
+      width: 48%;
+      height: 100vh;
+    }
+    .projectright {
+      background-image: url(../pic/namams.jpg);
+      background-size: cover;
+      width: 48%;
+      height: 100vh;
+    }
   }
 }
 
