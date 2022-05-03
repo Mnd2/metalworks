@@ -1,10 +1,4 @@
 #page_start {
-  background-image: url(../pic/mainbg.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
   .generalContainer {
     background-image: url(../pic/bg.jpg);
     height: 100vh;
@@ -305,6 +299,7 @@
     }
   }
   #aboutUs {
+    
     .aboutContainer {
       display: flex;
       height: 100vh;
@@ -317,10 +312,10 @@
         width: 49%;
         padding: 20px;
         .about1 {
-          color: #ffffff;
+          color: black;
         }
         .aboutUsText {
-          color: #ffffff;
+          color: black;
         }
       }
       .aboutRight {
@@ -329,6 +324,7 @@
         width: 50%;
         img {
           width: 100%;
+          margin: 20px;
           border-radius: 20%;
         }
       }
