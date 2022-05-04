@@ -185,8 +185,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 713 || document.documentElement.scrollTop > 713) {
-    document.getElementById("navbar").style.backgroundColor = "#614141c7";
+    document.getElementById("navbar").style.background = "#614141c7";
   } else {
-    document.getElementById("navbar").style.backgroundColor = "none";
+    document.getElementById("navbar").style.background = "none";
   }
-}
+};
