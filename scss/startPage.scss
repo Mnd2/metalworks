@@ -164,7 +164,7 @@
       background: none;
       display: flex;
       align-items: center;
-      transition: 1.5s;
+      transition: 1s;
       position: fixed;
       width: 100%;
       z-index: 9999;
@@ -301,7 +301,11 @@
     }
   }
   #aboutUs {
-
+    background-image: url(../pic/aboutBG.jpg);
+    height: 600px;
+    width: 950px;
+    float: right;
+    top: -100px;
     .aboutContainer {
       display: flex;
       height: 100vh;
@@ -311,23 +315,32 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 49%;
+        position: absolute;
+        width: 69%;
         padding: 20px;
+        z-index: 999;
+        top: 0;
+        bottom: 0;
         .about1 {
-          color: black;
+          color: white;
         }
         .aboutUsText {
-          color: black;
+          color: white;
+        }
+        a {
+          text-decoration: none;
+          color: blue;
+          font-weight: bold;
         }
       }
       .aboutRight {
         display: flex;
-        width: 50%;
+        width: 100%;
+        margin: 20px;
+        justify-content: flex-end;
         img {
-          right: 100px;
-          top: -60px;
-          position: absolute;
-          width: 60%;
+          position: relative;
+          width: 45%;
           margin: 20px;
         }
       }
