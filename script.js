@@ -116,6 +116,7 @@ const titleEl = document.querySelector(".title");
 const descriptionEl = document.querySelector(".description");
 const about1El = document.querySelector(".about1");
 const aboutUsTextEl = document.querySelector(".aboutUsText");
+const aboutUsPressEl = document.querySelector(".aboutUsPress");
 
 link.forEach(el => {
   el.addEventListener('click', () => {
@@ -134,6 +135,7 @@ link.forEach(el => {
     descriptionEl.textContent = data[attr].description;
     about1El.textContent = data[attr].about1;
     aboutUsTextEl.textContent = data[attr].aboutUsText;
+    aboutUsPressEl.textContent = data[attr].aboutUsPress;
   });
 });
 
@@ -149,7 +151,8 @@ var data = {
     "title": "Metalinių baldų projektavimas ir gamyba",
     "description": "Mes paverčiam metalą į dizainą",
     "about1": "Apie mus",
-    "aboutUsText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos atque reiciendis, rerum labore odit maxime iusto, molestias laborum repellat omnis ex, eveniet amet fugit deserunt excepturi molestiae minus error ab!",
+    "aboutUsText": "Mes paverčiame jūsų įdėjas realybe.Baldai ir jų konstrukcijos, interjero, eksterjero bei fasadų elementai ar kiti išskirtiniai gaminiai profesionalų dėka virsta estetiška ir kokybiška norimos idėjos detale.",
+    "aboutUsPress": "Plačiau...",
     
   },
   "english": {
@@ -162,7 +165,8 @@ var data = {
     "title": "Design and manufacture of metal furniture",
     "description": "We turn metal into design",
     "about1": "About Us",
-    "aboutUsText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "aboutUsText": "We turn your ideas into reality. Thanks to professionals, furniture and its constructions, interior, exterior and facade elements or other exclusive products turn into an aesthetic and high-quality detail of the desired idea.",
+    "aboutUsPress": "More...",
   },
 };
 
@@ -175,3 +179,14 @@ btn.forEach(sel => {
   });
 });
 
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 713 || document.documentElement.scrollTop > 713) {
+    document.getElementById("navbar").style.backgroundColor = "#614141c7";
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "none";
+  }
+}

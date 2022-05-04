@@ -11,8 +11,8 @@
     <title>MetalWorks</title>
 <body>
   <main class="generalContainer">
-  <header>
-	  <div class="logo">MetalWorks</div>
+  <header id="navbar">
+	  <div id="logo">MetalWorks</div>
     <nav class="responsive-menu">
 	    <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg><span>Menu</span></a>
 	
@@ -21,8 +21,8 @@
         <li><a href="#aboutUs"><span class="about">Apie mus</span></a></li>
         <li><a href="#project"><span class="project">Projektai</span></a>
           <ul class="sub-menu">
-            <li><a href="./verslui.html"><span class="business">Verslui</span></a></li>
-            <li><a href="./namams.html"><span class="home">Namams</span></a></li>
+            <li><a href="verslui/"><span class="business">Verslui</span></a></li>
+            <li><a href="namams/"><span class="home">Namams</span></a></li>
           </ul>
         </li>
         <li><a href="#"><span class="contacts">Kontaktai</span></a></li>
@@ -53,7 +53,7 @@
   <div class="aboutLeft">
     <h2 class="about1">Apie mus</h2>
     <p class="aboutUsText">Mes paverčiame jūsų įdėjas realybe.Baldai ir jų konstrukcijos, interjero, eksterjero bei fasadų elementai ar kiti išskirtiniai gaminiai profesionalų dėka virsta estetiška ir kokybiška norimos idėjos detale.</p>
-    <a href="#">Plačiau</a>
+    <a class="aboutUsPress" href="#">Plačiau...</a>
   </div>
   <div class="aboutRight">
     <img src="./app/pic/mainbg.jpg" alt="">
@@ -62,10 +62,14 @@
 </main>
 <main id="project">
   <div class="projectLeft">
-    
+    <div class="leftPic">
+      <img src="./app/pic/verslui.jpeg" alt="">
+    </div>
   </div>
   <div class="projectright">
-
+    <div class="rightPic">
+      <img src="./app/pic/namams.jpg" alt="">
+    </div>
   </div>
 </main>
   <script src="script.js"></script>
