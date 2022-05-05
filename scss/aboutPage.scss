@@ -1,5 +1,5 @@
-#page_start, #page_about {
-  .generalContainer {
+#page_about {
+  .aboutContainer {
     background-image: url(../pic/bg.jpg);
     height: 100vh;
     width: 100%;
@@ -262,111 +262,9 @@
         color: #d9b08c;
         text-shadow: 0px 0px 1px #f8edd5, 1px 0px 0px #f8edd5,
           1px 1px 0px #f8edd5, 1px 1px 0px #f8edd5;
+      
       }
     }
-  }
-  .about_cotacts {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    height: 100%;
-    .aboutContainer {
-      display: flex;
-      flex-direction: column;
-      width: 95%;
-      height: 65%;
-      padding: 0px 249px;
-      bottom: 0;
-      justify-content: flex-end;
-      h1 {
-        color: #fffefe;
-        font-weight: bold;
-      }
-      p {
-        color: #fffefe;
-        font-weight: bold;
-        font-size: 20px;
-      }
-    }
-    .contactsContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      a {
-        margin: 10px;
-        i {
-          color: #ffffff;
-        }
-      }
-    }
-  }
-  #aboutUs {
-    background-image: url(../pic/aboutBG.jpg);
-    height: 600px;
-    width: 950px;
-    float: right;
-    top: -100px;
-    .aboutContainer {
-      display: flex;
-      height: 100vh;
-      width: 100%;
-      .aboutLeft {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        width: 69%;
-        padding: 20px;
-        z-index: 999;
-        top: 0;
-        bottom: 0;
-        .about1 {
-          color: white;
-        }
-        .aboutUsText {
-          color: white;
-        }
-        a {
-          text-decoration: none;
-          color: blue;
-          font-weight: bold;
-        }
-      }
-      .aboutRight {
-        display: flex;
-        width: 100%;
-        margin: 20px;
-        justify-content: flex-end;
-        img {
-          position: relative;
-          width: 45%;
-          margin: 20px;
-        }
-      }
-    }
-  }
-  #project {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    .projectLeft {
-      width: 50%;
-      .leftPic {
-        img {
-          width: 90%;
-          height: 100vh;
-        }
-      }
-    }
-    .projectright {
-      width: 50%;
-      .rightPic {
-        img {
-          width: 90%;
-          height: 100vh;
-        }
-      }
-    }
+  
   }
 }
