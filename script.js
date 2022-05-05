@@ -158,8 +158,8 @@ var data = {
     "about1": "Apie mus",
     "aboutUsText": "Mes paverčiame jūsų įdėjas realybe.Baldai ir jų konstrukcijos, interjero, eksterjero bei fasadų elementai ar kiti išskirtiniai gaminiai profesionalų dėka virsta estetiška ir kokybiška norimos idėjos detale.",
     "aboutUsPress": "Plačiau...",
-    "businessTopText": "Įdėjos Jūsų verslui",
-    "homeTopText": "Įdėjos Jūsų namams",
+    "businessTopText": "Įdėjos Jūsų verslui...",
+    "homeTopText": "Įdėjos Jūsų namams...",
     
   },
   "english": {
@@ -174,8 +174,8 @@ var data = {
     "about1": "About Us",
     "aboutUsText": "We turn your ideas into reality. Thanks to professionals, furniture and its constructions, interior, exterior and facade elements or other exclusive products turn into an aesthetic and high-quality detail of the desired idea.",
     "aboutUsPress": "More...",
-    "businessTopText": "Ideas for your business",
-    "homeTopText": "Ideas for your home",
+    "businessTopText": "Ideas for your business...",
+    "homeTopText": "Ideas for your home...",
   },
 };
 
