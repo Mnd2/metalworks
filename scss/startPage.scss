@@ -357,7 +357,7 @@
       .leftPic {
         a {
           position: absolute;
-          h2 {
+          .businessTopText {
             top: 40%;
             left: 15%;
             font-size: 3em;
@@ -382,8 +382,8 @@
       width: 50%;
       .rightPic {
         a {
-          position: relative;
-          h2 {
+          position: absolute;
+          .homeTopText {
             position: absolute;
             top: 40%;
             right: 15%;
@@ -394,7 +394,7 @@
           img {
             filter: brightness(0.4);
             padding: 10px 20px;
-            width: 100%;
+            width: 120%;
             height: 100vh;
             transition: 0.5s;
             &:hover {

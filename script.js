@@ -117,6 +117,9 @@ const descriptionEl = document.querySelector(".description");
 const about1El = document.querySelector(".about1");
 const aboutUsTextEl = document.querySelector(".aboutUsText");
 const aboutUsPressEl = document.querySelector(".aboutUsPress");
+const businessTopTextEl = document.querySelector(".businessTopText");
+const homeTopTextEl = document.querySelector(".homeTopText");
+
 
 link.forEach(el => {
   el.addEventListener('click', () => {
@@ -136,6 +139,8 @@ link.forEach(el => {
     about1El.textContent = data[attr].about1;
     aboutUsTextEl.textContent = data[attr].aboutUsText;
     aboutUsPressEl.textContent = data[attr].aboutUsPress;
+    businessTopTextEl.textContent = data[attr].businessTopText;
+    homeTopTextEl.textContent = data[attr].homeTopText;
   });
 });
 
@@ -153,6 +158,8 @@ var data = {
     "about1": "Apie mus",
     "aboutUsText": "Mes paverčiame jūsų įdėjas realybe.Baldai ir jų konstrukcijos, interjero, eksterjero bei fasadų elementai ar kiti išskirtiniai gaminiai profesionalų dėka virsta estetiška ir kokybiška norimos idėjos detale.",
     "aboutUsPress": "Plačiau...",
+    "businessTopText": "Įdėjos Jūsų verslui",
+    "homeTopText": "Įdėjos Jūsų namams",
     
   },
   "english": {
@@ -167,6 +174,8 @@ var data = {
     "about1": "About Us",
     "aboutUsText": "We turn your ideas into reality. Thanks to professionals, furniture and its constructions, interior, exterior and facade elements or other exclusive products turn into an aesthetic and high-quality detail of the desired idea.",
     "aboutUsPress": "More...",
+    "businessTopText": "Ideas for your business",
+    "homeTopText": "Ideas for your home",
   },
 };
 
