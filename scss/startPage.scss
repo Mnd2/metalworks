@@ -1,4 +1,5 @@
-#page_start, #page_about {
+#page_start,
+#page_about {
   .generalContainer {
     background-image: url(../pic/bg.jpg);
     height: 100vh;
@@ -354,18 +355,52 @@
     .projectLeft {
       width: 50%;
       .leftPic {
-        img {
-          width: 90%;
-          height: 100vh;
+        a {
+          position: absolute;
+          h2 {
+            top: 40%;
+            left: 15%;
+            font-size: 3em;
+            position: absolute;
+            color: white;
+            z-index: 999;
+          }
+          img {
+            filter: brightness(0.4);
+            padding: 10px 20px;
+            width: 100%;
+            height: 100vh;
+            transition: 0.5s;
+            &:hover {
+              filter: brightness(0.6);
+            }
+          }
         }
       }
     }
     .projectright {
       width: 50%;
       .rightPic {
-        img {
-          width: 90%;
-          height: 100vh;
+        a {
+          position: relative;
+          h2 {
+            position: absolute;
+            top: 40%;
+            right: 15%;
+            font-size: 3em;
+            color: #ffffff;
+            z-index: 999;
+          }
+          img {
+            filter: brightness(0.4);
+            padding: 10px 20px;
+            width: 100%;
+            height: 100vh;
+            transition: 0.5s;
+            &:hover {
+              filter: brightness(0.6);
+            }
+          }
         }
       }
     }
