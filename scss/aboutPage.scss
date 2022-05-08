@@ -1,5 +1,5 @@
 #page_about {
-  .aboutContainer {
+  .generalContainer {
     background-image: url(../pic/bg.jpg);
     height: 100vh;
     width: 100%;
@@ -14,9 +14,11 @@
       pointer-events: none;
       margin-top: 20px;
       transition: 200ms all;
+
       position: absolute;
       top: 100%;
       left: 0;
+
       right: auto;
     }
 
@@ -48,7 +50,7 @@
       li {
         display: flex;
         font-size: 1rem;
-        width: 150%;
+        width: 100%;
         left: 0;
         right: 0px;
         align-content: space-between;
@@ -56,8 +58,19 @@
         justify-content: space-around;
         flex-direction: column;
         flex-wrap: nowrap;
+        position: relative;
+        transition: 5s;
         .press {
           color: #d9b08c;
+          &::after{
+              content: "";
+              position: absolute;
+              border: 2px solid #E27866;
+              background: #E27866 0% 0% no-repeat padding-box;
+              bottom: -15%;
+              left: 0;
+              right: 0;
+            }
         }
       }
     }
@@ -67,6 +80,7 @@
         display: inline-block;
         position: relative;
         vertical-align: middle;
+
         a {
           display: block;
         }
@@ -105,10 +119,14 @@
           position: absolute;
           top: 0;
           right: 0;
+
           padding: 0.5rem 1rem;
+
           z-index: 15;
+
           transform-origin: 50%;
           transition: 200ms all;
+
           &.active {
             transform: rotate(45deg);
           }
@@ -204,14 +222,15 @@
       color: #fffefe;
       font-size: 2rem;
       padding: 0.8rem 1rem;
+
       box-sizing: border-box;
-      width: 50%;
+      width: 30%;
       margin-left: 50px;
     }
     .telephone {
       display: flex;
       justify-content: center;
-      width: 1%;
+      width: 20%;
       font-size: 1rem;
       color: #fffefe;
       text-decoration: none;
@@ -223,7 +242,7 @@
       justify-content: center;
       top: 0;
       align-items: center;
-      width: 75%;
+      width: 60%;
       justify-content: center;
 
       li {
@@ -262,9 +281,46 @@
         color: #d9b08c;
         text-shadow: 0px 0px 1px #f8edd5, 1px 0px 0px #f8edd5,
           1px 1px 0px #f8edd5, 1px 1px 0px #f8edd5;
-      
       }
     }
-  
+  }
+  .about_cotacts {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 100%;
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      height: 5%;
+      padding: 0px 300px;
+      bottom: 0;
+      justify-content: flex-end;
+      h1 {
+        color: #fffefe;
+        font-weight: bold;
+      }
+      p {
+        color: #fffefe;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .contactsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        margin: 10px;
+        i {
+          color: #ffffff;
+          transition: 0.4s;
+          &:hover {
+            color: #d9b08c;
+          }
+        }
+      }
+    }
   }
 }
