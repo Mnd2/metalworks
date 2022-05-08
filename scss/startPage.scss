@@ -49,7 +49,7 @@
 
       li {
         display: flex;
-        font-size: 1rem;
+        font-size: 0.8rem;
         width: 100%;
         left: 0;
         right: 0px;
@@ -65,7 +65,7 @@
           &::after{
               content: "";
               position: absolute;
-              border: 2px solid #E27866;
+              border: 1px solid #E27866;
               background: #E27866 0% 0% no-repeat padding-box;
               bottom: -15%;
               left: 0;
@@ -273,7 +273,7 @@
 
       a {
         opacity: 1;
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-decoration: none;
         color: #ffffff;
       }
@@ -431,9 +431,13 @@
       }
     }
   }
-  #parners {
+  #partners {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height : 100vh;
     .partnersMain {
-      
+
     }
   }
 }
