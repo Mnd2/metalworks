@@ -199,3 +199,23 @@ function scrollFunction() {
     document.getElementById("navbar").style.background = "none";
   }
 };
+
+
+var string = "Mes paverčiam metalą į dizainą";
+var stringTwo = "Metalinių baldų projektavimas ir gamyba";
+var str = string.split("");
+var strTwo = stringTwo.split("");
+(function animate() {
+
+  str.length > 0 ? (descriptionEl.innerHTML += str.shift())
+    : clearTimeout(running);
+  var running = setTimeout(animate, 90);
+
+})();
+(function animateTwo() {
+
+  strTwo.length > 0 ? (titleEl.innerHTML += strTwo.shift())
+    : clearTimeout(running);
+  var running = setTimeout(animateTwo, 70);
+
+})();
