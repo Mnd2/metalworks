@@ -194,7 +194,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 200|| document.documentElement.scrollTop > 200) {
-    document.getElementById("navbar").style.background = "#614141c7";
+    document.getElementById("navbar").style.background = "black";
   } else {
     document.getElementById("navbar").style.background = "none";
   }
