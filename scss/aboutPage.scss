@@ -14,11 +14,9 @@
       pointer-events: none;
       margin-top: 20px;
       transition: 200ms all;
-
       position: absolute;
       top: 100%;
       left: 0;
-
       right: auto;
     }
 
@@ -69,7 +67,6 @@
         display: inline-block;
         position: relative;
         vertical-align: middle;
-
         a {
           display: block;
         }
@@ -108,14 +105,10 @@
           position: absolute;
           top: 0;
           right: 0;
-
           padding: 0.5rem 1rem;
-
           z-index: 15;
-
           transform-origin: 50%;
           transition: 200ms all;
-
           &.active {
             transform: rotate(45deg);
           }
@@ -211,10 +204,17 @@
       color: #fffefe;
       font-size: 2rem;
       padding: 0.8rem 1rem;
-
       box-sizing: border-box;
       width: 50%;
       margin-left: 50px;
+    }
+    .telephone {
+      display: flex;
+      justify-content: center;
+      width: 1%;
+      font-size: 1rem;
+      color: #fffefe;
+      text-decoration: none;
     }
 
     .main-menu,
@@ -223,7 +223,7 @@
       justify-content: center;
       top: 0;
       align-items: center;
-      width: 55%;
+      width: 75%;
       justify-content: center;
 
       li {
