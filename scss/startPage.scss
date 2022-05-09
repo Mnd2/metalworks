@@ -65,7 +65,7 @@
         position: relative;
         transition: 5s;
         .press {
-          color: #d9b08c;
+          color: white;
           &::after{
               content: "";
               position: absolute;
@@ -419,6 +419,7 @@
       align-items: flex-end;
       width: 45%;
       .rightPic {
+        top: -150px;
         a {
           text-decoration: none;
           .homeTopText {
