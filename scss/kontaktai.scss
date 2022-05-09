@@ -283,43 +283,20 @@
         1px 1px 0px #f8edd5;
     }
   }
-}
-.about_cotacts {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  height: 100%;
-  .aboutContainer {
+  #contacts {
     display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: 5%;
-    padding: 0px 300px;
-    bottom: 0;
-    justify-content: flex-end;
-    h1 {
-      color: #fffefe;
-      font-weight: bold;
-    }
-    p {
-      color: #fffefe;
-      font-weight: bold;
-      font-size: 20px;
-    }
-  }
-  .contactsContainer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    a {
-      margin: 10px;
-      i {
-        color: black;
-        transition: 0.4s;
-        &:hover {
-          color: #d9b08c;
-        }
-      }
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    .contactsContainer {
+      display: flex;
+    }
+    iframe {
+      display: flex;
+      align-items: center;
+      justify-contect: center;
     }
   }
 }
+
