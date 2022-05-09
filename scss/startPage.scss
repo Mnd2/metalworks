@@ -245,6 +245,9 @@
       align-items: center;
       width: 60%;
       justify-content: center;
+      .sub-menu {
+        top: 20px;
+      }
 
       li {
         a {
