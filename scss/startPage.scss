@@ -180,7 +180,8 @@
       position: fixed;
       width: 100%;
       z-index: 9999;
-      height: 60px;
+      height: 80px;
+      justify-content: space-around;
     }
 
     nav {
@@ -221,13 +222,10 @@
       display: flex;
       justify-content: center;
       vertical-align: middle;
-      color: #ffffff
-      ;
-      font-size: 2rem;
-      padding: 0.8rem 1rem;
-
+      color: #ffffff;
+      padding: 5px;
       box-sizing: border-box;
-      width: 30%;
+      width: 8%;
       margin-left: 50px;
     }
     .telephone {
@@ -300,17 +298,25 @@
       flex-direction: column;
       width: 95%;
       height: 5%;
-      padding: 0px 300px;
+      margin-left: 400px;
       bottom: 0;
       justify-content: flex-end;
       h1 {
         color: #fffefe;
-        font-weight: bold;
+        font-size: 1.7rem;
+
       }
-      p {
-        color: #fffefe;
-        font-weight: bold;
-        font-size: 20px;
+      .description {
+        height: 120px;
+        width: 140px;
+      }
+      .forFlex {
+        display: flex;
+        a {
+          margin: 0 10px;
+          color: white;
+          text-decoration: none;
+        }
       }
     }
     .contactsContainer {
@@ -337,7 +343,7 @@
     float: right;
     top: -70px;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     .aboutContainer {
       display: flex;
       height: 100vh;
