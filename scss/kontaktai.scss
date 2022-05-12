@@ -59,12 +59,12 @@
       position: relative;
       transition: 5s;
       .press {
-        color: #d9b08c;
+        color: white;
         &::after {
           content: "";
           position: absolute;
-          border: 2px solid #e27866;
-          background: #e27866 0% 0% no-repeat padding-box;
+          border: 1px solid white;
+          background: white 0% 0% no-repeat padding-box;
           bottom: -15%;
           left: 0;
           right: 0;
@@ -197,7 +197,7 @@
   }
 
   .toggle-menu {
-    color: black;
+    color: white;
     padding-right: 1rem;
     float: right;
 
@@ -216,13 +216,9 @@
   #logo {
     display: flex;
     justify-content: center;
-    vertical-align: middle;
-    color: black;
-    font-size: 2rem;
-    padding: 0.8rem 1rem;
-
-    box-sizing: border-box;
-    width: 30%;
+    color: white;
+    padding: 10px;
+    width: 20%;
     margin-left: 50px;
   }
   .telephone {
@@ -246,13 +242,13 @@
     li {
       a {
         padding: 1rem 1rem;
-        color: black;
+        color: white;
         text-decoration: none;
       }
     }
 
     .expand {
-      color: black;
+      color: white;
       font-size: 1.5rem;
       cursor: pointer;
     }
@@ -273,7 +269,7 @@
       opacity: 1;
       font-size: 1rem;
       text-decoration: none;
-      color: black;
+      color: white;
     }
     a.active {
       color: #d9b08c;

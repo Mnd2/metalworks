@@ -62,12 +62,12 @@
         position: relative;
         transition: 5s;
         .press {
-          color: #d9b08c;
+          color: white;
           &::after{
               content: "";
               position: absolute;
-              border: 2px solid #E27866;
-              background: #E27866 0% 0% no-repeat padding-box;
+              border: 1px solid white;
+              background: white 0% 0% no-repeat padding-box;
               bottom: -15%;
               left: 0;
               right: 0;
