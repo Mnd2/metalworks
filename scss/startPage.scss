@@ -336,18 +336,18 @@
     }
   }
   #aboutUs {
-    background-image: url(../pic/iStock-1164746310.jpg);
+    .aboutContainer {
+      // display: flex;
+      // height: 100vh;
+      // width: 100%;
+      background-image: url(../pic/iStock-1322352905.jpg);
     background-size: cover;
-    height: 600px;
-    width: 1050px;
+    height:600px;
+    width:1050px;
     float: right;
     top: -70px;
     margin-right: 50px;
     margin-bottom: 40px;
-    .aboutContainer {
-      display: flex;
-      height: 100vh;
-      width: 100%;
       .aboutLeft {
         display: flex;
         flex-direction: column;
@@ -383,14 +383,12 @@
           position: relative;
           width: 45%;
           margin: 20px;
+          margin-right: 35px;
         }
       }
     }
   }
   #project {
-    background-image: url(../pic/topbg.jpg);
-    background-repeat: repeat;
-    background-size: cover;
     width: 100%;
     height: 100%;
     display: flex;
