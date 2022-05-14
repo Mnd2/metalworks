@@ -374,10 +374,12 @@
       .aboutRight {
         display: flex;
         width: 100%;
-        margin: 20px;
+        height: 100%;
+        margin: 0px 20px 0px 20px;
         justify-content: flex-end;
+        align-items: center;
+        
         img {
-          position: relative;
           width: 60%;
           margin: 20px;
           margin-right: 35px;
