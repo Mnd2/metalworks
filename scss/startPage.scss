@@ -344,7 +344,7 @@
     float: right;
     top: 25px;
     margin-right: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
       .aboutLeft {
         display: flex;
         flex-direction: column;
@@ -388,8 +388,6 @@
     }
   }
   #project {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -428,7 +426,7 @@
       width: 45%;
       margin-left: 10px;
       .rightPic {
-        top: -150px;
+        top: -5%;
         a {
           text-decoration: none;
           .homeTopText {
@@ -465,17 +463,23 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     
     .contactsSocial {
       display: flex;
       text-align: center;
       justify-content: center;
       flex-direction: column;
-      box-shadow: -5px 4px 7px #80808070;
-      height: 400px;
+      box-shadow: -7px 0px 7px #80808070;
+      height: 45%;
+      border-radius: 20px 0 0 20px;
       a {
+        color: black;
         margin: 15px;
+        transition: 0.5s;
+        &:hover {
+            color: #284752;
+          }
       }
     }
     .contactsMain {
@@ -483,24 +487,46 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      box-shadow: 1px 2px 3px grey;
+      box-shadow: 0px 0px 9px grey;
       width: 25%;
-      height:600px;
+      height:85%;
+      background-color: #A2A3A8;
+      border-radius: 20px;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border-bottom: 3px solid white;
+        width: 100%;
+        height: 20%;
+        font-size: 1.5rem;
+        h2 {
+          color: black;
+        }
+      }
       h3 {
         display: flex;
         flex-direction: column;
         margin: 10px;
+        color: #3d3d3f;
+        font-size: 1.5rem;
         a {
           text-decoration: none;
-          color: black;
+          color: #61676D;
+          font-size: 1rem;
+          transition: 0.5s;
+          &:hover {
+            color: #284752;
+          }
         }
       }
     }
     #map {
-      border-radius: 20px;
+      border-radius: 0 20px 20px 0;
       border: none;
-      box-shadow: 7px 4px 5px #80808070;
+      box-shadow: 7px 0px 5px #80808070;
       margin: 20px 0 0 0;
+      filter: grayscale(100%);
     }
   }
 }

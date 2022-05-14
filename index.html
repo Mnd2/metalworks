@@ -103,7 +103,9 @@
   <a target="_blank" href="viber://add?number=37060728919"><i class="fab fa-viber" style="font-size: 30px;"></i></a>
   </div>
   <div class="contactsMain">
+    <div>
     <h2>Bendraukime</h2>
+    </div>
     <h3>Skambinkite:
       <span><a href="tel:+37060728919">tel:+37060728919</a></span>
     </h3>
@@ -112,11 +114,36 @@
   </span>
     </h3>
     <h3>Susitikime:
-      <span><a target="_blank" href="https://www.google.com/maps/dir/54.6666666,25.2662938/Zietelos+g.+6+Vilnius+03202/@54.6641912,25.2531813,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x46dd947ce9cb5f77:0x1dad588c1a34780c!2m2!1d25.2521242!2d54.6640848">Zietelos g. 6, Vilnius 03202</a></span>
+      <span><a target="_blank" href="https://www.google.com/maps/dir//Zietelos+g.+6+Vilnius+03202/@54.6641903,25.2444265,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dd947ce9cb5f77:0x1dad588c1a34780c!2m2!1d25.2521242!2d54.6640848">Zietelos g. 6, Vilnius 03202</a></span>
     </h3>
   </div>
   <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1153.7891364912236!2d25.251990778693365!3d54.66424934428084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd947ce9cb5f77%3A0x1dad588c1a34780c!2sZietelos%20g.%206%2C%20Vilnius%2003202!5e0!3m2!1slt!2slt!4v1652043886443!5m2!1slt!2slt" width="40%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
+<section id="question">
+  <div class="mainQuestion">
+    <h2>Turite klausimų?</h2>
+    <form action="https://formspree.io/f/xbjwqzjj" method="POST" id="my-form">
+
+      <div class="form-group">
+        <label for="firstName">Vardas</label>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+
+      <div class="form-group">
+        <label for="email">El.paštas</label>
+        <input type="text" id="email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="massage">Klauskite</label>
+        <textarea style="resize: vertical;" id="massage" name="massage" cols="30" rows="10"></textarea>
+        
+      </div>
+      <button type="submit">Siųsti</button>
+    </form>
+  </div>
+  <div id="status"></div>
+</section>
 
   
   <script src="script.js"></script>
