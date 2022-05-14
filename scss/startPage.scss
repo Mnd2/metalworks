@@ -339,8 +339,8 @@
     .aboutContainer {
       background-image: url(../pic/iStock-892043040.jpg);
     background-size: cover;
-    height:600px;
-    width:1350px;
+    height:100vh;
+    width:85%;
     float: right;
     top: 25px;
     margin-right: 50px;
@@ -460,16 +460,39 @@
   #contacts {
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 700px;
     
     .contactsSocial {
       display: flex;
-      
-
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: -5px 4px 7px #80808070;
+      height: 400px;
+      a {
+        margin: 15px;
+      }
     }
     .contactsMain {
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 1px 2px 3px grey;
+      width: 25%;
+      height:600px;
+      h3 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
     }
     #map {
       border-radius: 20px;
