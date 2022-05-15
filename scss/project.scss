@@ -1,0 +1,73 @@
+#project {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 165vh;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    .projectLeft {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-right: 10px;
+      .leftPic {
+        display: flex;
+        align-items: center;
+        background-image: url(../pic/iStock-892043040.jpg);
+        width: 95%;
+        height: 60%;
+        background-size: cover;
+        margin-left: 5px;
+        a {
+          text-decoration: none;
+          width: 55%;
+          img {
+            filter: brightness(1);
+            padding: 10px 20px;
+            width: 100%;
+            transition: 0.5s;
+            &:hover {
+              filter: brightness(0.6);
+            }
+          }
+        }
+        .rightText {
+          display: flex;
+          width: 45%;
+          height: 100%;
+        .businessTopText {
+          font-size: 2em;
+          color: white;
+          margin-left: 20px;
+          width:49%;
+        }
+      }
+      }
+    }
+    .projectright {
+      display: flex;
+      align-items: flex-end;
+      width: 45%;
+      margin-left: 10px;
+      .rightPic {
+        a {
+          text-decoration: none;
+          .homeTopText {
+            font-size: 2em;
+            color: black;
+            margin-left: 20px;
+          }
+          img {
+            filter: brightness(1);
+            padding: 10px 20px;
+            width: 80%;
+            transition: 0.5s;
+            &:hover {
+              filter: brightness(0.6);
+            }
+          }
+        }
+      }
+    }
+  }

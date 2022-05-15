@@ -1,0 +1,53 @@
+#aboutUs {
+    .aboutContainer {
+      background-image: url(../pic/iStock-892043040.jpg);
+      background-size: cover;
+      height: 100vh;
+      width: 85%;
+      float: right;
+      top: 25px;
+      margin-right: 50px;
+      margin-bottom: 100px;
+      .aboutLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 40%;
+        padding: 20px;
+        z-index: 999;
+        top: 0;
+        bottom: 0;
+        .about1 {
+          color: white;
+        }
+        .aboutUsText {
+          color: white;
+          text-align: justify;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .aboutRight {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0px 20px 0px 20px;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+          width: 60%;
+          margin: 20px;
+          margin-right: 35px;
+        }
+      }
+    }
+  }
