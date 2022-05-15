@@ -11,6 +11,7 @@
         margin: 10px;
         width: 100%;
         align-items: center;
+        justify-content: flex-end;
         h1 {
             font-size: 1rem;
         }
@@ -119,4 +120,35 @@
         }
     }
   }
+}
+
+// Kontaktai
+@media (max-width: 825px) {
+   #contacts {
+       flex-direction: column-reverse;
+       margin-top: 15px;
+       .contactsSocial {
+           flex-direction: row;
+           height: 10%;
+           a{
+
+           }
+       }
+       .contactsMain {
+           width: 90%;
+           div {
+               h2 {
+
+               }
+           }
+           h3 {
+               a {
+
+               }
+           }
+       }
+       #map {
+        width: 90%;
+       }
+   } 
 }
