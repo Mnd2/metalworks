@@ -1,0 +1,74 @@
+@media (max-width: 825px) {
+  #page_start {
+    .about_cotacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      .aboutContainer {
+        margin: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 825px) {
+  #page_start {
+    .contactsContainer {
+        height: 0;
+        width: 100%;
+        flex-direction: row;
+    }
+  }
+}
+// projektai
+@media (max-width: 825px) {
+  #page_start {
+    #project {
+        .projectLeft {
+            display: flex;
+            flex-direction: column;
+            .leftPic {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                a{
+                    width: 100%;
+                }
+                .rightText {
+                    width: 100%;
+                    .businessTopText {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+@media (max-width: 825px) {
+  #page_start {
+    #project {
+        .projectright {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: auto;
+            .rightPic {
+                display: flex;
+                flex-direction: column-reverse;
+                height: 100%;
+                a{
+                    width: 100%;
+                }
+                .leftText {
+                    width: 100%;
+                    .homeTopText {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+  }
+}

@@ -199,9 +199,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 200|| document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").style.background = "black";
     document.querySelector(".sub-menu").style.background = "black";
+    document.querySelector(".main-menu").style.background = "black";
   } else {
     document.getElementById("navbar").style.background = "none";
     document.querySelector(".sub-menu").style.background = "none";
+    document.querySelector(".main-menu").style.background = "none";
   }
 };
 

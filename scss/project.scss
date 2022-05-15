@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 195vh;
+  height: 175vh;
   justify-content: flex-end;
   flex-wrap: wrap;
 
@@ -38,6 +38,7 @@
         color: white;
         width: 45%;
         height: 100%;
+        padding: 3%;
         a {
           width: 100%;
           .businessTopText {
@@ -54,7 +55,7 @@
           }
         }
         p {
-          margin: 20px;
+          margin: 3%;
           text-align: justify;
         }
       }
@@ -65,8 +66,8 @@
     align-items: flex-start;
     justify-content: flex-end;
     width: 100%;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 5%;
+    margin-left: 1%;
     .rightPic {
       display: flex;
       justify-content: space-between;
@@ -75,9 +76,9 @@
       width: 95%;
       height: 60%;
       background-size: cover;
-      margin-right: 5px;
+      margin-right: 1%;
       .leftText {
-        padding: 20px;
+        padding: 5%;
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -85,23 +86,24 @@
         a {
           text-decoration: none;
           width: 100%;
-          h2 {
+          .homeTopText {
+            font-size: 2em;
             color: white;
+            margin-left: 3%;
+            transition: 4s;
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
         p {
-          margin: 20px;
+          margin: 3%;
           color: white;
           text-align: justify;
         }
       }
       a {
         width: 45%;
-        .homeTopText {
-          font-size: 2em;
-          color: black;
-          margin-left: 20px;
-        }
         img {
           filter: brightness(1);
           padding: 10px 20px;
