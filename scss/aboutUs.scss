@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  
     .aboutContainer {
       background-image: url(../pic/iStock-892043040.jpg);
       background-size: cover;
@@ -28,8 +29,10 @@
           text-decoration: none;
           color: white;
           font-weight: bold;
+          transition: .3s;
           &:hover {
-            text-decoration: underline;
+            text-decoration: underline solid $hover-color;
+            color: $hover-color;
           }
         }
       }
